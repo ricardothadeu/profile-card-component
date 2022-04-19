@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <div class="card">
+      <img id="top-card" src="images/bg-pattern-card.svg" alt="">
+      <img id="profile-pic" src="images/image-victor.jpg" alt="Profile Picture">
+      <div class="user-data">
+        <span class="name-age">
+          <strong>Victor Crest</strong>
+          <span class="age">26</span>
+        </span> 
+        <span class="city">London</span>
+      </div>
+      
+      <div class="numbers">
+        <span>80K</span>
+        <span>803K</span>
+        <span>1.4K</span> 
+      </div>
+      <div class="labels">
+        <span id="followers">Followers</span>
+        <span id="likes">Likes</span>
+        <span id="photos">Photos</span>
+      </div>
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <!--
+      <div class="stats">
+        <div class="followers">
+          <span class="number">80K</span>
+          <span class="label">Followers</span>
+        </div>
+        
+        <div class="likes">
+          <span class="number">803K</span>
+          <span class="label">Likes</span>
+        </div> 
+        
+        <div class="photos">
+          <span class="number">1.4K</span>
+          <span class="label">Photos</span>
+        </div>
+      </div>
+      -->
+    </div>
+  </body>
 </html>
